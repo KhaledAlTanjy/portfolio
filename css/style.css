@@ -1,0 +1,217 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Courier, monospace;
+}
+
+header{
+    background-color:lightskyblue;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    ;padding: 10px 100px ;
+    
+} 
+.logo{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight : 600; 
+    font-size: 1.8em;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+
+}
+.navbar a:hover{
+    color: black ;
+}
+
+section{
+    padding: 100px 200px;
+    
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/it1.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2{
+    color: white;
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-top :10px;
+}
+.main h3{
+    color: white;
+    font-size: 2em;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main-btn{
+    color: white;
+    background-color: lightskyblue;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.5em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover{
+    background-color: black;
+    transform: scale (1.1);
+}
+.social-icons a{
+    color: white;
+    font-size: 1.5em;
+    padding-right: 20px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color:black ;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    width: 350px;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px; ;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon {
+    color:black;
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: black;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+
+.contact .icon{
+    font-size: 4.5em;
+}
+.contact .info h3{
+    color: black;
+}
+.contact .info p{
+    font-size: 1em;
+}
+.footer{
+    background-color: lightskyblue;
+    color : white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/*
+body{
+    color: white;
+    line-height: 1.6;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1 , h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p{
+    margin: 10px 0;
+}
+
+.navbar{
+    background-color: red;
+    color: bisque;
+    height: 70px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar a {
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+ .navbar a:hover {
+    border-bottom: 2px white solid;
+ }
+
+.navbar .flex {
+    justify-content: space-between;
+}
+.container{
+    max-width: 1100px;
+    margin: auto 0;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+*/
