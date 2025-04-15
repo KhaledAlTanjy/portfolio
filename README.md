@@ -1,2 +1,5 @@
 # portfolio
-Learning project
+Learning project - HTML & CSS
+
+
+
