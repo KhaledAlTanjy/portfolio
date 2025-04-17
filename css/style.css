@@ -1,32 +1,69 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-*{
+* {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Courier, monospace;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Courier, monospace;
 }
 
-header{
-    background-color:lightskyblue;
+/*
+.breadcrumb.mobile-only {
+    display: none;
+}
+*/
+
+
+header {
+    display: flex;
+    background-color: lightskyblue;
     width: 100%;
     position: fixed;
     z-index: 999;
-    display: flex; 
     justify-content: space-between;
     align-items: center;
-    ;padding: 10px 100px ;
+    padding: 10px 100px;
+
+}
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+
+header .navbar ul li {
+   
     
-} 
-.logo{
+    color: #333;
+    display: block;
+
+}
+
+#menu-bar{
+    display: none;
+    header .navbar ul li{
+        width: 100%;
+        position: relative;
+    }
+}
+
+#menu-bar:checked ~ .navbar{
+    display: block;
+}
+
+.logo {
+    display: flex;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    font-weight : 600; 
+    font-weight: 600;
     font-size: 1.8em;
 }
-.navbar a{
+
+.navbar a {
     color: white;
     text-decoration: none;
     font-size: 1.1em;
@@ -34,14 +71,16 @@ header{
     padding-left: 30px;
 
 }
-.navbar a:hover{
-    color: black ;
+
+.navbar a:hover {
+    color: black;
 }
 
-section{
+section {
     padding: 100px 200px;
-    
+
 }
+
 .main {
     width: 100%;
     min-height: 100vh;
@@ -49,25 +88,27 @@ section{
     align-items: center;
     background-image: url('../images/it1.jpg');
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-.main h2{
+.main h2 {
     color: white;
     font-size: 3.5em;
     font-weight: 700;
-    margin-top :10px;
+    margin-top: 10px;
 }
-.main h3{
+
+.main h3 {
     color: white;
     font-size: 2em;
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.main-btn{
+
+.main-btn {
     color: white;
     background-color: lightskyblue;
     text-decoration: none;
@@ -81,52 +122,59 @@ section{
     transition: 0.7s ease;
 }
 
-.main-btn:hover{
+.main-btn:hover {
     background-color: black;
     transform: scale (1.1);
 }
-.social-icons a{
+
+.social-icons a {
     color: white;
     font-size: 1.5em;
     padding-right: 20px;
 }
 
-.title{
+.title {
     display: flex;
     justify-content: center;
-    color:black ;
+    color: black;
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 30px;
 }
-.content{
+
+.content {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.card{
+
+.card {
     background-color: white;
     width: 350px;
     box-shadow: 0 5px 25px rgba(1 1 1 /15%);
     border-radius: 10px;
     padding: 25px;
-    margin: 15px; ;
+    margin: 15px;
+    ;
     transition: 0.7s ease;
 }
-.card:hover{
+
+.card:hover {
     transform: scale(1.1);
 }
 
 .icon {
-    color:black;
+    color: black;
     font-size: 8em;
     text-align: center;
 }
-.info{
+
+.info {
     text-align: center;
 }
-.info h3{
+
+.info h3 {
     color: black;
     font-size: 1.2em;
     font-weight: 700;
@@ -134,84 +182,158 @@ section{
 }
 
 
-.contact .icon{
+.contact .icon {
     font-size: 4.5em;
 }
-.contact .info h3{
+
+.contact .info h3 {
     color: black;
 }
-.contact .info p{
+
+.contact .info p {
     font-size: 1em;
 }
-.footer{
+
+.footer {
     background-color: lightskyblue;
-    color : white;
+    color: white;
     padding: 2em;
     display: flex;
     justify-content: space-between;
 }
 
+.reg-box {
+    display: grid;
+    font-size: 1.2em;
+    place-items: center;
+    background-image: url('../images/it1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 600px; */
 
 
-
-/*
-body{
-    color: white;
-    line-height: 1.6;
 }
 
-ul{
-    list-style-type: none;
+.register-form {
+    background-color: lightskyblue;
+    box-shadow: 0 2px 8px;
+    border-radius: 15px;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+.reg-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 25px;
+    width: 600px;
+    /* margin: 25px; */
 }
 
-h1 , h2{
-    font-weight: 300;
-    line-height: 1.2;
-    margin: 10px 0;
+.reg-box h2 {
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
-p{
-    margin: 10px 0;
+.column {
+    display: grid;
+    gap: 0.5rem;
 }
 
-.navbar{
-    background-color: red;
-    color: bisque;
-    height: 70px;
+.column label {
+    margin-top: 0.5rem;
 }
-.navbar ul{
-    display: flex;
-}
-.navbar a {
-    color: white;
-    padding: 10px;
-    margin: 0;
-}
- .navbar a:hover {
-    border-bottom: 2px white solid;
- }
 
-.navbar .flex {
-    justify-content: space-between;
-}
-.container{
-    max-width: 1100px;
-    margin: auto 0;
-    overflow: auto;
-    padding: 0 40px;
+.reg-form input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100;
 }
 
 
-.flex{
+
+.reg-box button:hover {
+    transition: 0.7s ease;
+    background-color: black;
+}
+
+.signup-btn {
+    /* width: 100%; */
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100%;
 }
 
+.signup-btn button {
+    padding: 0.3rem;
+    background-color: white;
+    color: lightskyblue;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-bottom: .75em;
+}
+
+
+/* Tablets and smaller laptops */
+
+/*
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 50px;
+    }
+
+    .navbar {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main h2 {
+        font-size: 2.5em;
+    }
+
+    .main h3 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 80px 100px;
+    }
+
+    .reg-form {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
 */
+
+@media (max-width:992px){
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 100px;
+
+    }
+    .navbar{
+        margin-top:  10px ;
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .main h2{
+        font-size: 2em;
+    }
+    .main h3{
+        font-size: 1em;
+    }
+    section{
+        padding: 80px 100px;
+    }
+    .reg-form {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
