@@ -3,137 +3,234 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <title>Portfolio-Home</title>
     <link rel="icon" type="image/x-icon" href="images/p.png">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link rel="stylesheet" href="/css/style.css"> -->
 </head>
 
 <body>
 
-    <!-- Header -->
-  
-    <header>
-        <a href="#" class="logo">Khaled Al-Tanjy</a>
-        <input type="checkbox" name="" id="menu-bar">
-        
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#course">Courses</a> </li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a> </li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navbar -->
 
-    <!-- Main Section -->
-    <section class="main">
-        <div>
-            <h2>Full stack <>
-            </h2>
-            <h3>Digitize your future</h3>
-            <a href="register.html" class="main-btn">Register Now !</a>
-            <a href="#" class="main-btn">Download CV</a>
-            <div class="social-icons">
-                <a href="https://github.com/KhaledAlTanjy/Lourki-website"><i class="fa-brands fa-github"></i></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                
+    <!-- <nav class="navbar navbar-expand-lg bg-primary navbar-dark border-bottom border-1 border-dark py-3 ">
+        <div class="container">
+            <a href="" class="navbar-brand">
+                <h4>Khaled Al-Tanjy</h4>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="#navmenu">
+            <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Courses" class="nav-link">Courses</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            
+            </div>
+        </div>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Khaled Al-Tanjy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <!-- Showcase -->
+    <section class="align-items text-dark p-4 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Become
+                        <span class="text-warning">Full stack</span>
+                        Developer <>
+                    </h1>
+                    <p class="lead">
+                        We foucs on teaching our students the fundamentals
+                        of the latest and greatest technologies.
+                    </p>
+                    <button class="btn btn-dark btn-lg" onclick="window.location.href='register.html'">Register
+                        Now!</button>
+
+                </div>
+                <img class="image-fluid w-50" src="images/it2.jpg" alt="">
             </div>
         </div>
     </section>
+
 
     <!-- Courses -->
-    <section class="cards" id="course">
-        <h2 class="title">Courses</h2>
-        <div class="content">
+    <section class="p-5 border-top border-bottom border-1 border-dark" id="Courses">
+        <h1 class="text-center" >Courses</h1>
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card text-dark course-card">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3 ">
+                                <i class="bi bi-code"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Basics Course
+                            </h3>
+                            <p class="card-text">
+                                fundamentals and Ethics
+                            </p>
+                            <a href="#" class="btn btn-dark">Read more</a>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-file-code"></i>
+                <div class="col-md">
+                    <div class="card text-dark course-card">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3 ">
+                                <i class="bi bi-code"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Learning Course
+                            </h3>
+                            <p class="card-text">
+                                Programming Language
+                            </p>
+                            <a href="#" class="btn btn-dark">Read more</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="info">
-                    <h3>Graduation Courses</h3>
-                    <P>Advanced Course</P>
-                </div>
-            </div>
 
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-laptop-code"></i>
-                </div>
-                <div class="info">
-                    <h3>Learning Courses</h3>
-                    <P>Mid-level Course</P>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-code"></i>
-                </div>
-                <div class="info">
-                    <h3>Learning Courses</h3>
-                    <P>Basic Course</P>
+                <div class="col-md">
+                    <div class="card text-dark course-card">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3 ">
+                                <i class="bi bi-code"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Web Course
+                            </h3>
+                            <p class="card-text">
+                                Learning Full stack
+                            </p>
+                            <a href="#" class="btn btn-dark">Read more</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--contact -->
-    <section class="cards" id="contact">
-        <h2 class="title">Contact Information</h2>
-        <div class="content">
-        <div class="card">
-            <div class="icon">
-                <i class="fa-solid fa-phone"></i>
-            </div>
-            <div class="info">
-                <h3>Phone</h3>
-                <P>+962797603714</P>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="icon">
-                <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="info">
-                <h3>Email</h3>
-                <P>tanjykhaled@gmail.com</P>
-            </div>
-        </div>
-        </div>
 
 
+    <!--About -->
+    <section class="p5" id="about" >
+        <h1 class="text-center ms-auto" >About</h1>
+        <div class="container">
+            <div class="row align-items-cnter justify-content-between">
+                <div class="col-md">
+                    <img src="images/it3.jpg" class="image-fluid w-75" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Khaled Academy</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Saepe molestiae facilis recusandae
+                        deserunt ut error?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Recusance consecrator enim quo neque?
+                        Modi consequuntur quasi aliquid alias?
+                        Magni cum dolorum cumque quod officiis dolores
+                        reprehenderit numquam saepe porro sunt?</p>
+                    <a href="" class="btn btn-dark mt-3">
+                        <i class="bi bi-chevron-right"></i>
+                        Read More</a>
+                </div>
+            </div>
+        </div>
     </section>
 
 
-<!-- Footer -->
-<footer class="footer">
-    <p class="footer-title">Copyrights @<span>T-Group</span></p>
-    <div class="social-icons">
-        <a href="https://github.com/KhaledAlTanjy/Lourki-website"><i class="fa-brands fa-github"></i></i></a>
-        <a href="https://www.linkedin.com/in/khaled-al-tanjy-456878233?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8%2F3wN93cTn6uWWafw0MxnA%3D%3D"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-</footer>
+    <section class="p5  border-bottom border-1 border-dark " id="about">
+        <div class="container">
+            <div class="row align-items-cnter justify-content-between">
+                <div class="col-md p-5">
+                    <h2>React JS</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Saepe molestiae facilis recusandae
+                        deserunt ut error?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Recusandae consequatur enim quo neque?
+                        Modi consequuntur quasi aliquid alias?
+                        Magni cum dolorum cumque quod officiis dolores
+                        reprehenderit numquam saepe porro sunt?</p>
+                        <a href="" class="btn btn-dark mt-3">
+                            <i class="bi bi-chevron-right"></i>
+                            Learn Now</a>
+                            
+                        </div>
+                        <div class="col-md">
+                            <img src="images/react.jpg" class="image-fluid w-75" alt="">
+                        </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
 </body>
-
+ <footer></footer>
 </html>
-<!--
-
-<a href="index.html">Home</a>
-            <a href="#course">Courses</a> 
-            <a href="#projects">Projects</a> 
-            <a href="#about">About</a> 
-            <a href="#contact">Contact Us</a>
-
-
-
-
--->
